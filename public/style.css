@@ -33,3 +33,14 @@ nav ul li {
     border: 1px solid #ddd;
     box-sizing: border-box;
 }
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.subscribe input, .subscribe button {
+    margin: 5px 0;
+    padding: 10px;
+}
