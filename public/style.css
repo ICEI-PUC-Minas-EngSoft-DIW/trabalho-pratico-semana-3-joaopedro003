@@ -44,3 +44,18 @@ nav ul li {
     margin: 5px 0;
     padding: 10px;
 }
+@media (max-width: 768px) {
+    .activities {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
