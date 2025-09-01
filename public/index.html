@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto de Home-page</title>
+    <title>Explorando Lugares</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="site-header">
-        <h1>Nome do Lugar / Projeto</h1>
+        <h1>Explorando Lugares</h1>
+        <p>Descubra experiências incríveis!</p>
     </header>
+
+    <!-- Navigation -->
     <nav class="main-nav">
         <ul>
             <li><a href="#">Home</a></li>
@@ -18,34 +22,43 @@
             <li><a href="#">Contato</a></li>
         </ul>
     </nav>
+
+    <!-- Main content -->
     <main class="content">
+        <!-- introducao -->
         <section class="intro">
-            <h2>Bem-vindo ao meu projeto</h2>
-            <p>Apresentação do lugar e das experiências.</p>
+            <h2>Bem-vindo</h2>
+            <p>Explore museus, trilhas e vivencieexperiências únicas em diversos lugares.</p>
+        </section>
+
+        <!-- Atividades -->
+        <section class="activities">
+            <article>
+                <h3>Trilha nas montanhas</h3>
+                <img src="imagens/trilha.jpg" alt="Trilha nas montanhas">
+                <p>Uma aventura em meio à natureza para todos os níveis de experiência.</p>
+            </article>
+            <article>
+                <h3>Passeio de balão</h3>
+                <img src="imagens/balao.png" alt="Passeio de balão">
+                <p>Veja o mundo por outra perspectiva e viva esse passeio incrivel.</p>
+            </article>
+        </section>
+
+        <!-- subescricao-->
+        <section class="subscribe">
+            <h2>Inscreva-se para novidades</h2>
+            <form>
+                <input type="text" name="nome" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Seu e-mail">
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="site-footer">
-        <p>© 2025 Meu Projeto</p>
+        <p>© 2025 Explorando Lugares | <a href="#">Política de Privacidade</a></p>
     </footer>
 </body>
 </html>
-<section class="activities">
-    <article>
-        <h3>Trilha no Parque</h3>
-        <img src="imagens/trilha.jpg" alt="Trilha no parque">
-        <p>Descrição da trilha e experiências.</p>
-    </article>
-    <article>
-        <h3>Visita ao Museu</h3>
-        <img src="imagens/museu.jpg" alt="Museu local">
-        <p>Informações sobre exposições e horários.</p>
-    </article>
-</section>
-<section class="subscribe">
-    <h2>Inscreva-se para novidades</h2>
-    <form>
-        <input type="text" name="nome" placeholder="Seu nome">
-        <input type="email" name="email" placeholder="Seu e-mail">
-        <button type="submit">Enviar</button>
-    </form>
-</section>

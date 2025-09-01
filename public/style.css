@@ -1,61 +1,137 @@
-body {
+
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-header, footer {
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header.site-header {
     background-color: #4CAF50;
     color: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+/* Navigation */
+nav.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+}
+
+nav.main-nav ul li {
+    margin: 0 15px;
+}
+
+nav.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav.main-nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Intro */
+.intro {
     padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
+/* Activities */
 .activities {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 20px;
+    gap: 20px;
 }
 
 .activities article {
     width: 45%;
-    padding: 10px;
     border: 1px solid #ddd;
-    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
 }
+
+.activities img {
+    width: 100%;
+    height: auto;
+}
+
+/* Subscription */
+.subscribe {
+    padding: 20px;
+    text-align: center;
+}
+
 .subscribe form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    align-items: center;
+    max-width: 300px;
     margin: 0 auto;
 }
 
 .subscribe input, .subscribe button {
     margin: 5px 0;
     padding: 10px;
+    width: 100%;
 }
+
+.subscribe button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer.site-footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
     .activities {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul {
+    nav.main-nav ul {
         flex-direction: column;
     }
-}
 
-header {
-    position: sticky;
-    top: 0;
+    nav.main-nav ul li {
+        margin: 5px 0;
+    }
 }
